@@ -45,6 +45,7 @@
         <module name="IllegalInstantiation"/>
         <module name="RedundantThrows">
             <property name="allowUnchecked" value="true"/>
+            <property name="suppressLoadErrors" value="true"/>
         </module>
 
         <!-- Miscellaneous other checks.                   -->
