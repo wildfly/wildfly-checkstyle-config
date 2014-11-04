@@ -27,10 +27,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-      <groupId>org.jboss</groupId>
-      <artifactId>jboss-parent</artifactId>
-      <version>12</version>
-      <relativePath></relativePath>
+        <groupId>org.jboss</groupId>
+        <artifactId>jboss-parent</artifactId>
+        <version>16</version>
     </parent>
 
     <groupId>org.wildfly.checkstyle</groupId>
@@ -40,31 +39,9 @@
 
     <licenses>
         <license>
-            <name>lgpl</name>
-            <url>http://repository.jboss.org/licenses/lgpl-2.1.txt</url>
+            <name>apache2</name>
+            <url>http://repository.jboss.org/licenses/apache-2.0.txt</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
-
-    <build>
-        <plugins>
-            <plugin>
-              <groupId>org.zanata</groupId>
-              <artifactId>zanata-maven-plugin</artifactId>
-              <version>1.5.0</version>
-              <configuration>
-                 <skip>true</skip>
-              </configuration>
-            </plugin>
-        </plugins>
-
-        <extensions>
-            <extension>
-                <groupId>org.apache.maven.wagon</groupId>
-                <artifactId>wagon-webdav-jackrabbit</artifactId>
-                <version>1.0-beta-7</version>
-            </extension>
-        </extensions>
-    </build>
-
 </project>
