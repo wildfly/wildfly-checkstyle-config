@@ -48,10 +48,11 @@
         <module name="EmptyStatement"/>
         <module name="EqualsHashCode"/>
         <module name="IllegalInstantiation"/>
-        <module name="RedundantThrows">
+        <!-- removed in checkstyle 6.2, see https://github.com/checkstyle/checkstyle/issues/473 -->
+        <!--module name="RedundantThrows">
             <property name="allowUnchecked" value="true"/>
             <property name="suppressLoadErrors" value="true"/>
-        </module>
+        </module-->
 
         <!-- Miscellaneous other checks.                   -->
         <module name="UpperEll"/>
