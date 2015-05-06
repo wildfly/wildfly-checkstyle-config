@@ -39,7 +39,7 @@
         <!-- Checks for blocks. You know, those {}'s         -->
         <module name="LeftCurly">
             <property name="option" value="eol"/>
-            <property name="tokens" value="CLASS_DEF,CTOR_DEF,INTERFACE_DEF,METHOD_DEF,LITERAL_SWITCH,STATIC_INIT,INSTANCE_INIT"/>
+            <property name="tokens" value="CLASS_DEF,CTOR_DEF,INTERFACE_DEF,METHOD_DEF,LITERAL_SWITCH,STATIC_INIT"/>
         </module>
 
         <!-- Checks for common coding problems               -->
