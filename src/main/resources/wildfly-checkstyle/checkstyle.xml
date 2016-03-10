@@ -57,7 +57,8 @@
         <!-- Miscellaneous other checks.                   -->
         <module name="UpperEll"/>
         <module name="PackageAnnotation"/>
-        <module name="CovariantEquals"/>
+        <!-- This check doesn't actually work correctly if the overloaded equals is an abstract method on a base class -->
+        <!-- <module name="CovariantEquals"/> -->
         <module name="ArrayTypeStyle"/>
 
     </module>
