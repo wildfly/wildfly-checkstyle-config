@@ -63,5 +63,9 @@
 
     </module>
 
+    <module name="SuppressionFilter">
+        <property name="file" value="/wildfly-checkstyle/suppressions.xml" />
+    </module>
+
 </module>
 
