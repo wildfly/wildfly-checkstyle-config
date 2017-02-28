@@ -61,11 +61,21 @@
         <!-- <module name="CovariantEquals"/> -->
         <module name="ArrayTypeStyle"/>
 
+        <!-- This is required for SuppressWarningsFilter to work. -->
+        <module name="SuppressWarningsHolder"/>
+
+        <!-- Disallow @SuppressWarnings("all") -->
+        <module name="SuppressWarnings">
+            <property name="format" value="^all$"/>
+        </module>
     </module>
 
     <module name="SuppressionFilter">
         <property name="file" value="/wildfly-checkstyle/suppressions.xml" />
     </module>
+
+    <!-- Suppress checkstyle warnings in annotations with syntax @SuppressWarnings("checkstyle:lowercasemodulename") -->
+    <module name="SuppressWarningsFilter"/>
 
 </module>
 
