@@ -63,6 +63,11 @@
 
         <!-- This is required for SuppressWarningsFilter to work. -->
         <module name="SuppressWarningsHolder"/>
+
+        <!-- Disallow @SuppressWarnings("all") -->
+        <module name="SuppressWarnings">
+            <property name="format" value="^all$"/>
+        </module>
     </module>
 
     <module name="SuppressionFilter">
