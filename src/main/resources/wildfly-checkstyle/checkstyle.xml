@@ -34,7 +34,10 @@
 
         <!-- Modifier Checks                                    -->
         <module name="ModifierOrder"/>
-        <module name="RedundantModifier"/>
+        <!-- Too many errors reported since Checkstyle upgrade to > 6.2 -->
+        <module name="RedundantModifier">
+          <property name="tokens" value="ANNOTATION_FIELD_DEF, RESOURCE"/>
+      </module>
 
         <!-- Checks for blocks. You know, those {}'s         -->
         <module name="LeftCurly">
@@ -46,7 +49,6 @@
         <!-- Disabled until http://sourceforge.net/tracker/?func=detail&aid=2843447&group_id=29721&atid=397078 is fixed-->
         <!--<module name="DoubleCheckedLocking"/>-->
         <module name="EmptyStatement"/>
-        <module name="EqualsHashCode"/>
         <module name="IllegalInstantiation"/>
         <!-- removed in checkstyle 6.2, see https://github.com/checkstyle/checkstyle/issues/473 -->
         <!--module name="RedundantThrows">
