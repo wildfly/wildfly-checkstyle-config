@@ -33,7 +33,7 @@
     <groupId>org.wildfly.checkstyle</groupId>
     <artifactId>wildfly-checkstyle-config</artifactId>
     <name>WildFly: Checkstyle Configuration</name>
-    <version>1.0.7.Final</version>
+    <version>1.0.8.Final-SNAPSHOT</version>
 
     <licenses>
         <license>
@@ -42,8 +42,4 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
-
-  <scm>
-    <tag>1.0.7.Final</tag>
-  </scm>
 </project>
