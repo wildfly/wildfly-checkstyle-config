@@ -35,7 +35,7 @@
     <groupId>org.wildfly.checkstyle</groupId>
     <artifactId>wildfly-checkstyle-config</artifactId>
     <name>WildFly: Checkstyle Configuration</name>
-    <version>1.0.7.Final-SNAPSHOT</version>
+    <version>1.0.7.Final</version>
 
     <licenses>
         <license>
