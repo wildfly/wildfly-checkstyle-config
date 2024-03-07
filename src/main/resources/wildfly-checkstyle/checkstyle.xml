@@ -37,8 +37,8 @@
         <module name="ModifierOrder"/>
         <!-- Too many errors reported since Checkstyle upgrade to > 6.2 -->
         <module name="RedundantModifier">
-          <property name="tokens" value="ANNOTATION_FIELD_DEF"/>
-      </module>
+            <property name="tokens" value="ANNOTATION_FIELD_DEF"/>
+        </module>
 
         <!-- Checks for blocks. You know, those {}'s         -->
         <module name="LeftCurly">
@@ -74,7 +74,7 @@
     </module>
 
     <module name="SuppressionFilter">
-        <property name="file" value="/wildfly-checkstyle/suppressions.xml" />
+        <property name="file" value="/wildfly-checkstyle/suppressions.xml"/>
     </module>
 
     <!-- Suppress checkstyle warnings in annotations with syntax @SuppressWarnings("checkstyle:lowercasemodulename") -->
